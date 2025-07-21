@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billionaire Money Spending Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>💰 Billionaire Money Spending Simulator 💰</h1>
+        <p>Experience what it's like to have unlimited wealth!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#game">Game</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+        </ul>
+    </nav>
+
+    <main id="game">
+        <div class="billionaire-selector">
+            <h2>Choose Your Billionaire</h2>
+            <div class="billionaire-grid">
+                <div class="billionaire-card active" data-wealth="128000000000" data-name="Jeff Bezos">
+                    <h3>Jeff Bezos</h3>
+                    <p>$128 Billion</p>
+                </div>
+                <div class="billionaire-card" data-wealth="219000000000" data-name="Elon Musk">
+                    <h3>Elon Musk</h3>
+                    <p>$219 Billion</p>
+                </div>
+                <div class="billionaire-card" data-wealth="128000000000" data-name="Bill Gates">
+                    <h3>Bill Gates</h3>
+                    <p>$128 Billion</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="money-display">
+            <div class="money-left">
+                <h2>Money Left: $<span id="moneyLeft">128,000,000,000</span></h2>
+            </div>
+            <div class="money-spent">
+                <h3>Spent: $<span id="moneySpent">0</span></h3>
+            </div>
+        </div>
+
+        <div class="spending-categories">
+            <div class="category">
+                <h3>🏠 Real Estate</h3>
+                <div class="items">
+                    <div class="item" data-price="50000000">
+                        <span>Luxury Mansion</span>
+                        <span class="price">$50M</span>
+                        <button onclick="buyItem(50000000, 'Luxury Mansion')">Buy</button>
+                        <span class="quantity">0</span>
+                    </div>
+                    <div class="item" data-price="200000000">
+                        <span>Private Island</span>
+                        <span class="price">$200M</span>
+                        <button onclick="buyItem(200000000, 'Private Island')">Buy</button>
+                        <span class="quantity">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>🚗 Transportation</h3>
+                <div class="items">
+                    <div class="item" data-price="3000000">
+                        <span>Bugatti Chiron</span>
+                        <span class="price">$3M</span>
+                        <button onclick="buyItem(3000000, 'Bugatti Chiron')">Buy</button>
+                        <span class="quantity">0</span>
+                    </div>
+                    <div class="item" data-price="500000000">
+                        <span>Private Jet</span>
+                        <span class="price">$500M</span>
+                        <button onclick="buyItem(500000000, 'Private Jet')">Buy</button>
+                        <span class="quantity">0</span>
+                    </div>
+                    <div class="item" data-price="1000000000">
+                        <span>Super Yacht</span>
+                        <span class="price">$1B</span>
+                        <button onclick="buyItem(1000000000, 'Super Yacht')">Buy</button>
+                        <span class="quantity">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>💎 Luxury Items</h3>
+                <div class="items">
+                    <div class="item" data-price="1000000">
+                        <span>Diamond Ring</span>
+                        <span class="price">$1M</span>
+                        <button onclick="buyItem(1000000, 'Diamond Ring')">Buy</button>
+                        <span class="quantity">0</span>
+                    </div>
+                    <div class="item" data-price="100000000">
+                        <span>Famous Painting</span>
+                        <span class="price">$100M</span>
+                        <button onclick="buyItem(100000000, 'Famous Painting')">Buy</button>
+                        <span class="quantity">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>🌍 Big Purchases</h3>
+                <div class="items">
+                    <div class="item" data-price="10000000000">
+                        <span>Buy Twitter</span>
+                        <span class="price">$10B</span>
+                        <button onclick="buyItem(10000000000, 'Buy Twitter')">Buy</button>
+                        <span class="quantity">0</span>
+                    </div>
+                    <div class="item" data-price="50000000000">
+                        <span>Space Program</span>
+                        <span class="price">$50B</span>
+                        <button onclick="buyItem(50000000000, 'Space Program')">Buy</button>
+                        <span class="quantity">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="achievements">
+            <h3>🏆 Achievements</h3>
+            <div id="achievementsList">
+                <p>Start spending to unlock achievements!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Billionaire Money Spending Simulator. All rights reserved.</p>
+        <p><a href="mailto:contact@billionairesimulator.com">Contact Us</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+                      </html>
+                      
